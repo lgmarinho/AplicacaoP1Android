@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ApplicationP1Android</string>
+    <string name="bem_vindo_a_c_ndido_mendes">Bem vindo(a) à Cândido Mendes.</string>
+    <string name="efetuar_login">Login</string>
+    <string name="limpar">Limpar</string>
+    <string name="SelecionarCurso">Curso</string>
+    <string-array name="SpinnerCurso">
+        <item>Direito</item>
+        <item>Análise e Desenvolvimento de Sistemas</item>
+        <item>Administração</item>
+        <item>Economia</item>
+        <item>Matemática</item>
+        <item>Contabilidade</item>
+    </string-array>
+    <string-array name="SpinnerDisciplina">
+        <item>Matéria 1</item>
+        <item>Matéria 2</item>
+        <item>Matéria 3</item>
+        <item>Matéria 4</item>
+        <item>Matéria 5</item>
+        <item>Matéria 6</item>
+        <item>Matéria 7</item>
+        <item>Matéria 8</item>
+    </string-array>
+
+    <string-array name="SpinnerSexo">
+        <item>Masculino</item>
+        <item>Feminino</item>
+
+    </string-array>
+
+</resources>

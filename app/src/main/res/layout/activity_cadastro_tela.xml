@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro_tela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/ucam">
+
+    <TextView
+        android:text="Cadastro de Cursos e Disciplinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SelecionarCurso"
+        android:textSize="22sp"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SelecionarCurso"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:weightSum="1">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Spinner1"
+            android:entries="@array/SpinnerCurso"
+            tools:background="@android:color/background_light"
+            android:alpha="0.8"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/background_light"
+            android:backgroundTint="@android:color/background_light" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spinner2"
+            android:layout_marginTop="30dp"
+            tools:background="@android:color/background_light"
+            android:alpha="0.8"
+            android:entries="@array/SpinnerDisciplina"
+            android:background="@android:color/background_light"
+            android:backgroundTint="@android:color/background_light" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="Cadastrar Aluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AlunoCadastroButton"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignStart="@+id/SelecionarCurso"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="385dp"
+        android:autoText="false" />
+
+    <Button
+        android:text="Progresso Aluno"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/AlunoCadastroButton"
+        android:id="@+id/ProgressoButton"
+        android:layout_alignEnd="@+id/SelecionarCurso"
+        android:layout_toEndOf="@+id/AlunoCadastroButton"
+        android:layout_width="wrap_content" />
+
+    <Button
+        android:text="Inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AlunoCadastroButton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/InicioButton" />
+
+    <TextView
+        android:text="Opcionais do Curso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/AlunoCadastroButton"
+        android:id="@+id/textView2"
+        tools:textColor="@android:color/background_light"
+        android:textColor="@android:color/background_light"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:background="@android:color/background_light"
+        android:weightSum="1"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp">
+
+        <CheckBox
+            android:text="Tutoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox" />
+
+        <CheckBox
+            android:text="Estágio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox2" />
+
+        <CheckBox
+            android:text="Monitoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox4" />
+    </RadioGroup>
+
+</RelativeLayout>

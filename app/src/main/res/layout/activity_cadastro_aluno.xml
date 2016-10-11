@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro_aluno"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ucam.java.android.applicationp1android.CadastroAluno"
+    android:background="@drawable/ucam">
+
+    <TextView
+        android:text="Cadastro do Aluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/NomeText"
+            android:hint=" Nome"
+            android:backgroundTint="@android:color/background_light"
+            android:background="@android:color/background_light"
+            android:alpha="0.9"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/EnderecoText"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/background_light"
+            android:alpha="0.9"
+            android:hint=" Endereço" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/EmailText2"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/background_light"
+            android:alpha="0.9"
+            android:hint=" Email" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/TelefoneText"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/background_light"
+            android:alpha="0.9"
+            android:hint=" Telefone" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="datetime"
+            android:ems="10"
+            android:id="@+id/DtNascText"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/background_light"
+            android:alpha="0.9"
+            android:hint=" Data de Nascimento" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Spinner3"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@android:color/background_light"
+            android:background="@android:color/background_light"
+            tools:background="@android:color/background_light"
+            android:entries="@array/SpinnerSexo"
+            android:alpha="0.9"
+            android:dropDownSelector="?attr/actionModeCloseDrawable" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/OkButton2"
+        android:layout_marginTop="380dp"
+        android:layout_toStartOf="@+id/InicioButton2" />
+
+    <Button
+        android:text="Limpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LimparButton2"
+        android:layout_alignBaseline="@+id/OkButton2"
+        android:layout_alignBottom="@+id/OkButton2"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/InicioButton2" />
+
+    <Button
+        android:text="Inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OkButton2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/InicioButton2" />
+</RelativeLayout>
