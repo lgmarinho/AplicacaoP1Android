@@ -86,4 +86,13 @@
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/gridLayout" />
 
+    <Button
+        android:text="Cadastrar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/CadastrarButton"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

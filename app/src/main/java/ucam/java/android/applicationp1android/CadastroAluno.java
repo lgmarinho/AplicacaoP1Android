@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
+import android.database.sqlite.*;
 
 
 public class CadastroAluno extends AppCompatActivity {

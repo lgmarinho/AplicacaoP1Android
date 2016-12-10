@@ -18,6 +18,8 @@
         <activity android:name=".CadastroTela" />
         <activity android:name=".CadastroAluno" />
         <activity android:name=".ProgressoTela"></activity>
+
+
     </application>
 
 </manifest>
